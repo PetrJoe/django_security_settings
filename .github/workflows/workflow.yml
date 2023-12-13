@@ -1,0 +1,9 @@
+- name: Upload package to Test PyPI
+  uses: pypa/gh-action-pypi-publish@releases/v1
+  with:
+    user: __pypi-AgENdGVzdC5weXBpLm9yZwIkYmQ3ZTBjOWMtMmViZi00YmM0LWI5YWMtNGEzYTRiODhiYWUxAAIqWzMsImZkZjNjNjZjLTYwOTQtNDJhNC05NmIxLTMyYzE3ZjYzZjgwOSJdAAAGIOQfakyRme8_5CbSSHCt3jmFty6Wj0w5gAvZNG5PDefm__
+    password: ${{ secrets.PYPI_TEST_TOKEN }}
+    distributions: "sdist bdist_wheel"
+    skip_existing: true
+    allow_failure: true
+  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
