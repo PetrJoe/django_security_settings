@@ -17,7 +17,7 @@ pip install django_secure-settings
 
 1. **Configuration in Django Project:**
 
-   - Add `'secure_settings'` to the `INSTALLED_APPS` list in your main project's `settings.py`:
+   - Add `'django_secure_settings'` to the `INSTALLED_APPS` list in your main project's `settings.py`:
 
      ```python
      # settings.py
