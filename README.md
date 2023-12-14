@@ -7,10 +7,10 @@ The `django_secure_settings` Django package provides a set of secure default set
 
 ## Installation
 
-Install the package using `pip` download the repo then extract it:
+Install the package using `pip`:
 
 ```bash
-pip install -e .
+      pip install -e git+https://github.com/PetrJoe/django_security_settings.git@cd78237ddc6baa1e4ef78100fcef048cb69e7739#egg=django_secure_settings
 ```
 
 ## Usage
